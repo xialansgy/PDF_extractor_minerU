@@ -1,0 +1,1944 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        108,
+                        51,
+                        211,
+                        63
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                110,
+                                55,
+                                123,
+                                61
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        110,
+                                        55,
+                                        123,
+                                        61
+                                    ],
+                                    "score": 0.9599999785423279,
+                                    "content": "IN",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        35,
+                        65,
+                        286,
+                        90
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                35,
+                                64,
+                                285,
+                                79
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        35,
+                                        64,
+                                        285,
+                                        79
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "Christians behaving themselves like Mahome",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        },
+                        {
+                            "bbox": [
+                                35,
+                                79,
+                                67,
+                                88
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        35,
+                                        79,
+                                        67,
+                                        88
+                                    ],
+                                    "score": 0.8799999952316284,
+                                    "content": "dans.3",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        }
+                    ],
+                    "index": 1.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        34,
+                        90,
+                        289,
+                        251
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                46,
+                                90,
+                                289,
+                                104
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        46,
+                                        90,
+                                        289,
+                                        104
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "4.The natives son had reason to suspect ihe",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                34,
+                                102,
+                                289,
+                                117
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        34,
+                                        102,
+                                        289,
+                                        117
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "viceroy’s sincerity in his expressions of regret",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                113,
+                                289,
+                                130
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        113,
+                                        289,
+                                        130
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "at the proceedings of wlich they complained.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                35,
+                                127,
+                                289,
+                                140
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        35,
+                                        127,
+                                        289,
+                                        140
+                                    ],
+                                    "score": 0.949999988079071,
+                                    "content": "For about this time the Dominican frars, under",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                138,
+                                289,
+                                154
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        138,
+                                        289,
+                                        154
+                                    ],
+                                    "score": 0.8999999761581421,
+                                    "content": "pretence of building a convent,erected a for-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                150,
+                                290,
+                                167
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        150,
+                                        290,
+                                        167
+                                    ],
+                                    "score": 0.8899999856948853,
+                                    "content": "tress on the island of Solor,which,as soon as",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                32,
+                                162,
+                                290,
+                                181
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        32,
+                                        162,
+                                        290,
+                                        181
+                                    ],
+                                    "score": 0.8799999952316284,
+                                    "content": "finished,the viceroy garrisoned with a strong",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                175,
+                                288,
+                                192
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        175,
+                                        288,
+                                        192
+                                    ],
+                                    "score": 0.9300000071525574,
+                                    "content": "force. The natives very naturally felt indig",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                188,
+                                289,
+                                203
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        188,
+                                        289,
+                                        203
+                                    ],
+                                    "score": 0.9700000286102295,
+                                    "content": "nant at this additional encroachment,and took",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                202,
+                                289,
+                                216
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        202,
+                                        289,
+                                        216
+                                    ],
+                                    "score": 0.9599999785423279,
+                                    "content": "every opportunity to attack the garrison.The",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                212,
+                                289,
+                                229
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        212,
+                                        289,
+                                        229
+                                    ],
+                                    "score": 0.949999988079071,
+                                    "content": "monks,forgetful of their peaceable profession,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                226,
+                                289,
+                                241
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        226,
+                                        289,
+                                        241
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "took an active part in these skirmishes,and",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 14
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                239,
+                                209,
+                                251
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        239,
+                                        209,
+                                        251
+                                    ],
+                                    "score": 0.8799999952316284,
+                                    "content": "many of tben feil sword in hand",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 15
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        33,
+                        253,
+                        290,
+                        463
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                46,
+                                252,
+                                289,
+                                265
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        46,
+                                        252,
+                                        289,
+                                        265
+                                    ],
+                                    "score": 0.9300000071525574,
+                                    "content": "The Menomedan faith has been appropriately",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 16
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                263,
+                                289,
+                                278
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        263,
+                                        289,
+                                        278
+                                    ],
+                                    "score": 0.9200000166893005,
+                                    "content": "entitled.The religion of the sword:and with",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        },
+                        {
+                            "bbox": [
+                                32,
+                                276,
+                                290,
+                                291
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        32,
+                                        276,
+                                        290,
+                                        291
+                                    ],
+                                    "score": 0.9300000071525574,
+                                    "content": "qual propriety may we so designate the re-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                289,
+                                289,
+                                302
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        289,
+                                        289,
+                                        302
+                                    ],
+                                    "score": 0.9300000071525574,
+                                    "content": "gion of these bellhigerent friars.The Portu-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        },
+                        {
+                            "bbox": [
+                                34,
+                                302,
+                                289,
+                                315
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        34,
+                                        302,
+                                        289,
+                                        315
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "guesg writers give an account of one of their",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                313,
+                                291,
+                                328
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        313,
+                                        291,
+                                        328
+                                    ],
+                                    "score": 0.9300000071525574,
+                                    "content": "missionaries,femando Vinagre,who was as",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                326,
+                                290,
+                                340
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        326,
+                                        290,
+                                        340
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "prompt in the field of battle as at the baptismal",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                32,
+                                338,
+                                289,
+                                353
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        32,
+                                        338,
+                                        289,
+                                        353
+                                    ],
+                                    "score": 0.9300000071525574,
+                                    "content": "font.This man, though a secular priest,un-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 23
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                351,
+                                291,
+                                365
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        351,
+                                        291,
+                                        365
+                                    ],
+                                    "score": 0.9599999785423279,
+                                    "content": "dertook the command of a squadron that was",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                364,
+                                290,
+                                377
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        364,
+                                        290,
+                                        377
+                                    ],
+                                    "score": 0.9599999785423279,
+                                    "content": "sent to the assistance of the rajah of Tidore,on",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                34,
+                                376,
+                                289,
+                                389
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        34,
+                                        376,
+                                        289,
+                                        389
+                                    ],
+                                    "score": 0.949999988079071,
+                                    "content": "which occasion he is said to have acted in the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                388,
+                                290,
+                                402
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        388,
+                                        290,
+                                        402
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "twofold capacity of a great commander,and a",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                401,
+                                289,
+                                415
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        401,
+                                        289,
+                                        415
+                                    ],
+                                    "score": 0.949999988079071,
+                                    "content": "great apostle, at one time appearing in armour,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                414,
+                                288,
+                                427
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        414,
+                                        288,
+                                        427
+                                    ],
+                                    "score": 0.9700000286102295,
+                                    "content": "at another in a surplice; and even occasionally",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                425,
+                                289,
+                                440
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        425,
+                                        289,
+                                        440
+                                    ],
+                                    "score": 0.9800000190734863,
+                                    "content": "baptizing the converts of his sword without put-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                438,
+                                289,
+                                452
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        438,
+                                        289,
+                                        452
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "ting off his armour,but covering it with his",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        },
+                        {
+                            "bbox": [
+                                32,
+                                450,
+                                291,
+                                465
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        32,
+                                        450,
+                                        291,
+                                        465
+                                    ],
+                                    "score": 0.9599999785423279,
+                                    "content": "ecclesiastical vest.In this crusade he had two",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 32
+                        }
+                    ],
+                    "index": 24
+                }
+            ],
+            "layout_bboxes": [],
+            "page_idx": 0,
+            "page_size": [
+                344.8999938964844,
+                605.5
+            ],
+            "_layout_tree": [],
+            "images": [],
+            "tables": [],
+            "interline_equations": [],
+            "discarded_blocks": [
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        32,
+                        477,
+                        291,
+                        540
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                44,
+                                477,
+                                193,
+                                489
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        44,
+                                        477,
+                                        193,
+                                        489
+                                    ],
+                                    "score": 0.9100000262260437,
+                                    "content": "3GeddesHistory,&c,Pp.2427",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                103,
+                                487,
+                                215,
+                                500
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        103,
+                                        487,
+                                        215,
+                                        500
+                                    ],
+                                    "score": 0.949999988079071,
+                                    "content": "Pudet haec opprobria nobis",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                104,
+                                497,
+                                176,
+                                509
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        104,
+                                        497,
+                                        176,
+                                        509
+                                    ],
+                                    "score": 0.9700000286102295,
+                                    "content": "Vel dici potuisse.",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                43,
+                                506,
+                                289,
+                                520
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        43,
+                                        506,
+                                        289,
+                                        520
+                                    ],
+                                    "score": 0.9599999785423279,
+                                    "content": "Called Tadura or Daco, an island in the Indian Ocean,",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                34,
+                                518,
+                                117,
+                                528
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        34,
+                                        518,
+                                        117,
+                                        528
+                                    ],
+                                    "score": 0.9599999785423279,
+                                    "content": "one of the Moluccas",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                42,
+                                527,
+                                290,
+                                540
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        42,
+                                        527,
+                                        290,
+                                        540
+                                    ],
+                                    "score": 0.9300000071525574,
+                                    "content": "These a la Dragoon conversions.Geddes’History, p. 27.",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        19,
+                        13,
+                        37,
+                        41
+                    ],
+                    "lines": []
+                },
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        293,
+                        1,
+                        339,
+                        126
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                295,
+                                7,
+                                333,
+                                47
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        295,
+                                        7,
+                                        333,
+                                        47
+                                    ],
+                                    "score": 0.8299999833106995,
+                                    "content": "SI",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                315,
+                                48,
+                                336,
+                                63
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        315,
+                                        48,
+                                        336,
+                                        63
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "269",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                303,
+                                68,
+                                325,
+                                78
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        303,
+                                        68,
+                                        325,
+                                        78
+                                    ],
+                                    "score": 0.9200000166893005,
+                                    "content": "A.D.",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                303,
+                                75,
+                                324,
+                                86
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        303,
+                                        75,
+                                        324,
+                                        86
+                                    ],
+                                    "score": 0.9599999785423279,
+                                    "content": "1570.",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                293,
+                                95,
+                                326,
+                                104
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        293,
+                                        95,
+                                        326,
+                                        104
+                                    ],
+                                    "score": 0.9200000166893005,
+                                    "content": "Viceroy'a",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                293,
+                                102,
+                                331,
+                                112
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        293,
+                                        102,
+                                        331,
+                                        112
+                                    ],
+                                    "score": 0.949999988079071,
+                                    "content": "insineerity,",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                293,
+                                110,
+                                320,
+                                119
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        293,
+                                        110,
+                                        320,
+                                        119
+                                    ],
+                                    "score": 0.9900000095367432,
+                                    "content": "military",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                293,
+                                118,
+                                314,
+                                126
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        293,
+                                        118,
+                                        314,
+                                        126
+                                    ],
+                                    "score": 0.9900000095367432,
+                                    "content": "friars.",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "need_drop": false,
+            "drop_reason": [],
+            "para_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        108,
+                        51,
+                        211,
+                        63
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                110,
+                                55,
+                                123,
+                                61
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        110,
+                                        55,
+                                        123,
+                                        61
+                                    ],
+                                    "score": 0.9599999785423279,
+                                    "content": "IN",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        }
+                    ],
+                    "index": 0,
+                    "page_num": "page_0",
+                    "page_size": [
+                        344.8999938964844,
+                        605.5
+                    ],
+                    "bbox_fs": [
+                        110,
+                        55,
+                        123,
+                        61
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        35,
+                        65,
+                        286,
+                        90
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                35,
+                                64,
+                                285,
+                                79
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        35,
+                                        64,
+                                        285,
+                                        79
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "Christians behaving themselves like Mahome",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        },
+                        {
+                            "bbox": [
+                                35,
+                                79,
+                                67,
+                                88
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        35,
+                                        79,
+                                        67,
+                                        88
+                                    ],
+                                    "score": 0.8799999952316284,
+                                    "content": "dans.3",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        }
+                    ],
+                    "index": 1.5,
+                    "page_num": "page_0",
+                    "page_size": [
+                        344.8999938964844,
+                        605.5
+                    ],
+                    "bbox_fs": [
+                        35,
+                        64,
+                        285,
+                        88
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        34,
+                        90,
+                        289,
+                        251
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                46,
+                                90,
+                                289,
+                                104
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        46,
+                                        90,
+                                        289,
+                                        104
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "4.The natives son had reason to suspect ihe",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                34,
+                                102,
+                                289,
+                                117
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        34,
+                                        102,
+                                        289,
+                                        117
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "viceroy’s sincerity in his expressions of regret",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                113,
+                                289,
+                                130
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        113,
+                                        289,
+                                        130
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "at the proceedings of wlich they complained.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                35,
+                                127,
+                                289,
+                                140
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        35,
+                                        127,
+                                        289,
+                                        140
+                                    ],
+                                    "score": 0.949999988079071,
+                                    "content": "For about this time the Dominican frars, under",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                138,
+                                289,
+                                154
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        138,
+                                        289,
+                                        154
+                                    ],
+                                    "score": 0.8999999761581421,
+                                    "content": "pretence of building a convent,erected a for-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                150,
+                                290,
+                                167
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        150,
+                                        290,
+                                        167
+                                    ],
+                                    "score": 0.8899999856948853,
+                                    "content": "tress on the island of Solor,which,as soon as",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                32,
+                                162,
+                                290,
+                                181
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        32,
+                                        162,
+                                        290,
+                                        181
+                                    ],
+                                    "score": 0.8799999952316284,
+                                    "content": "finished,the viceroy garrisoned with a strong",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                175,
+                                288,
+                                192
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        175,
+                                        288,
+                                        192
+                                    ],
+                                    "score": 0.9300000071525574,
+                                    "content": "force. The natives very naturally felt indig",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                188,
+                                289,
+                                203
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        188,
+                                        289,
+                                        203
+                                    ],
+                                    "score": 0.9700000286102295,
+                                    "content": "nant at this additional encroachment,and took",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                202,
+                                289,
+                                216
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        202,
+                                        289,
+                                        216
+                                    ],
+                                    "score": 0.9599999785423279,
+                                    "content": "every opportunity to attack the garrison.The",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                212,
+                                289,
+                                229
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        212,
+                                        289,
+                                        229
+                                    ],
+                                    "score": 0.949999988079071,
+                                    "content": "monks,forgetful of their peaceable profession,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                226,
+                                289,
+                                241
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        226,
+                                        289,
+                                        241
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "took an active part in these skirmishes,and",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 14
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                239,
+                                209,
+                                251
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        239,
+                                        209,
+                                        251
+                                    ],
+                                    "score": 0.8799999952316284,
+                                    "content": "many of tben feil sword in hand",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 15
+                        }
+                    ],
+                    "index": 9,
+                    "page_num": "page_0",
+                    "page_size": [
+                        344.8999938964844,
+                        605.5
+                    ],
+                    "bbox_fs": [
+                        32,
+                        90,
+                        290,
+                        251
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        33,
+                        253,
+                        290,
+                        463
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                46,
+                                252,
+                                289,
+                                265
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        46,
+                                        252,
+                                        289,
+                                        265
+                                    ],
+                                    "score": 0.9300000071525574,
+                                    "content": "The Menomedan faith has been appropriately",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 16
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                263,
+                                289,
+                                278
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        263,
+                                        289,
+                                        278
+                                    ],
+                                    "score": 0.9200000166893005,
+                                    "content": "entitled.The religion of the sword:and with",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        },
+                        {
+                            "bbox": [
+                                32,
+                                276,
+                                290,
+                                291
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        32,
+                                        276,
+                                        290,
+                                        291
+                                    ],
+                                    "score": 0.9300000071525574,
+                                    "content": "qual propriety may we so designate the re-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                289,
+                                289,
+                                302
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        289,
+                                        289,
+                                        302
+                                    ],
+                                    "score": 0.9300000071525574,
+                                    "content": "gion of these bellhigerent friars.The Portu-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        },
+                        {
+                            "bbox": [
+                                34,
+                                302,
+                                289,
+                                315
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        34,
+                                        302,
+                                        289,
+                                        315
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "guesg writers give an account of one of their",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                313,
+                                291,
+                                328
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        313,
+                                        291,
+                                        328
+                                    ],
+                                    "score": 0.9300000071525574,
+                                    "content": "missionaries,femando Vinagre,who was as",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                326,
+                                290,
+                                340
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        326,
+                                        290,
+                                        340
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "prompt in the field of battle as at the baptismal",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                32,
+                                338,
+                                289,
+                                353
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        32,
+                                        338,
+                                        289,
+                                        353
+                                    ],
+                                    "score": 0.9300000071525574,
+                                    "content": "font.This man, though a secular priest,un-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 23
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                351,
+                                291,
+                                365
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        351,
+                                        291,
+                                        365
+                                    ],
+                                    "score": 0.9599999785423279,
+                                    "content": "dertook the command of a squadron that was",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                364,
+                                290,
+                                377
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        364,
+                                        290,
+                                        377
+                                    ],
+                                    "score": 0.9599999785423279,
+                                    "content": "sent to the assistance of the rajah of Tidore,on",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                34,
+                                376,
+                                289,
+                                389
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        34,
+                                        376,
+                                        289,
+                                        389
+                                    ],
+                                    "score": 0.949999988079071,
+                                    "content": "which occasion he is said to have acted in the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                388,
+                                290,
+                                402
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        388,
+                                        290,
+                                        402
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "twofold capacity of a great commander,and a",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                401,
+                                289,
+                                415
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        401,
+                                        289,
+                                        415
+                                    ],
+                                    "score": 0.949999988079071,
+                                    "content": "great apostle, at one time appearing in armour,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                414,
+                                288,
+                                427
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        414,
+                                        288,
+                                        427
+                                    ],
+                                    "score": 0.9700000286102295,
+                                    "content": "at another in a surplice; and even occasionally",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                425,
+                                289,
+                                440
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        425,
+                                        289,
+                                        440
+                                    ],
+                                    "score": 0.9800000190734863,
+                                    "content": "baptizing the converts of his sword without put-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        },
+                        {
+                            "bbox": [
+                                33,
+                                438,
+                                289,
+                                452
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        33,
+                                        438,
+                                        289,
+                                        452
+                                    ],
+                                    "score": 0.9399999976158142,
+                                    "content": "ting off his armour,but covering it with his",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        },
+                        {
+                            "bbox": [
+                                32,
+                                450,
+                                291,
+                                465
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        32,
+                                        450,
+                                        291,
+                                        465
+                                    ],
+                                    "score": 0.9599999785423279,
+                                    "content": "ecclesiastical vest.In this crusade he had two",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 32
+                        }
+                    ],
+                    "index": 24,
+                    "page_num": "page_0",
+                    "page_size": [
+                        344.8999938964844,
+                        605.5
+                    ],
+                    "bbox_fs": [
+                        32,
+                        252,
+                        291,
+                        465
+                    ]
+                }
+            ]
+        }
+    ],
+    "_parse_type": "ocr",
+    "_version_name": "1.3.0"
+}

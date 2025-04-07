@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>智能文档处理系统</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #2196F3;
+            --success-color: #4CAF50;
+            --error-color: #f44336;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .upload-area {
+            border: 2px dashed var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            transition: border-color 0.3s;
+        }
+
+        .upload-area:hover {
+            border-color: var(--primary-color);
+        }
+
+        .file-list {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .file-item:last-child {
+            border-bottom: none;
+        }
+
+        .file-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .file-name {
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .file-meta {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .process-btn { background: var(--primary-color); color: white; }
+        .result-btn { background: var(--success-color); color: white; }
+        .delete-btn { background: var(--error-color); color: white; }
+
+        .result-panel {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 6px;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+
+        .markdown-content {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 4px;
+        }
+
+        .markdown-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .chat-modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            max-width: 95%;
+            height: 70vh;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            display: none;
+            flex-direction: column;
+            z-index: 1000;
+        }
+
+        .chat-header {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f9fa;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .chat-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1rem;
+            background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+        }
+
+        .message {
+            margin: 0.8rem 0;
+            max-width: 80%;
+            animation: messageAppear 0.3s ease-out;
+        }
+
+        .user-message {
+            margin-left: auto;
+            background: #2196F3;
+            color: white;
+            border-radius: 15px 15px 3px 15px;
+            padding: 12px 16px;
+        }
+
+        .bot-message {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 15px 15px 15px 3px;
+            padding: 12px 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        @keyframes messageAppear {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .chat-input {
+            padding: 1rem;
+            border-top: 1px solid #eee;
+            background: white;
+            border-radius: 0 0 12px 12px;
+        }
+
+        .chat-input-box {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        #chatInput {
+            flex: 1;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .hidden { display: none; }
+        
+        .loading-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>云端文档处理系统</h1>
+        
+        <div class="upload-area" id="dropZone">
+            <input type="file" id="fileInput" accept=".pdf" hidden>
+            <div class="loading-overlay" id="uploadLoading">
+                <div class="spinner"></div>
+            </div>
+            <p>拖放PDF文件至此或<label for="fileInput">点击选择</label></p>
+        </div>
+
+        <div class="file-list" id="fileList"></div>
+        
+        <div id="resultPanel" class="result-panel hidden"></div>
+    </div>
+
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-header">
+            <div>
+                <span id="chatTitle">文档智能问答</span>
+                <small id="chatTokens" style="color: #666; margin-left: 1rem;"></small>
+            </div>
+            <button onclick="closeChat()" style="background: none; border: none; font-size: 1.2em;">×</button>
+        </div>
+        <div class="chat-body" id="chatBody"></div>
+        <div class="chat-input">
+            <div class="chat-input-box">
+                <input type="text" id="chatInput" placeholder="输入您的问题（回车发送）..." 
+                       onkeypress="if(event.keyCode ===13) sendQuestion()">
+                <button onclick="sendQuestion()" class="process-btn">发送</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSession = null;
+
+        const fileItemTemplate = (file) => `
+            <div class="file-item">
+                <div class="file-info">
+                    <div class="file-name" title="${file.filename}">${file.filename}</div>
+                    <div class="file-meta">
+                        上传时间: ${new Date(file.upload_time * 1000).toLocaleString()}
+                        ${file.processed ? ` | 最后解析: ${new Date(file.process_time * 1000).toLocaleString()}` : ''}
+                    </div>
+                </div>
+                <div class="file-actions">
+                    ${file.processed ? 
+                        `<div style="display: flex; gap: 0.5rem;">
+                            <button class="result-btn" data-id="${file.file_id}" onclick="showResults('${file.file_id}')">查看结果</button>
+                            <button class="chat-btn" onclick="startChat('${file.file_id}')">智能问答</button>
+                            <button class="process-btn" data-id="${file.file_id}" onclick="processFile('${file.file_id}', true)">重新解析</button>
+                        </div>` : 
+                        `<button class="process-btn" data-id="${file.file_id}" onclick="processFile('${file.file_id}')">开始解析</button>`}
+                    <button class="delete-btn" onclick="deleteFile('${file.file_id}')">删除</button>
+                </div>
+            </div>
+        `;
+
+        async function loadFileList() {
+            try {
+                const res = await fetch(`/api/files?_=${Date.now()}`);
+                if (!res.ok) throw new Error(`HTTP错误! 状态码: ${res.status}`);
+                const data = await res.json();
+                
+                if (!data.success) throw new Error(data.error || '未知错误');
+                
+                currentFiles = data.files.sort((a, b) => b.upload_time - a.upload_time);
+                const fileListElement = document.getElementById('fileList');
+                
+                if (currentFiles.length === 0) {
+                    fileListElement.innerHTML = `
+                        <div class="file-item" style="color: #666; justify-content: center;">
+                            暂无文件，请上传PDF文档
+                        </div>
+                    `;
+                } else {
+                    fileListElement.innerHTML = currentFiles.map(fileItemTemplate).join('');
+                }
+            } catch (err) {
+                console.error('加载失败:', err);
+                document.getElementById('fileList').innerHTML = `
+                    <div class="file-item" style="color: red;">
+                        加载失败: ${err.message}
+                    </div>
+                `;
+            }
+        }
+
+        async function startChat(fileId) {
+            try {
+                const res = await fetch('/api/chat/start', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({file_id: fileId})
+                });
+                
+                const data = await res.json();
+                if (!data.success) throw new Error(data.error);
+                
+                currentSession = data.session_id;
+                document.getElementById('chatTitle').textContent = `正在讨论：${data.filename}`;
+                document.getElementById('chatModal').style.display = 'flex';
+                addMessage('system', '您好！我已准备好回答关于这篇文档的问题。');
+            } catch (err) {
+                alert(`对话初始化失败：${err.message}`);
+            }
+        }
+
+        function addMessage(role, content) {
+            const body = document.getElementById('chatBody');
+            const message = document.createElement('div');
+            message.className = `message ${role}-message`;
+            message.innerHTML = content;
+            body.appendChild(message);
+            body.scrollTop = body.scrollHeight;
+        }
+
+        async function sendQuestion() {
+            const input = document.getElementById('chatInput');
+            const question = input.value.trim();
+            if (!question || !currentSession) return;
+            
+            addMessage('user', question);
+            input.value = '';
+            
+            try {
+                const res = await fetch('/api/chat/ask', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        session_id: currentSession,
+                        question: question
+                    })
+                });
+                
+                const data = await res.json();
+                if (!data.success) throw new Error(data.error);
+                
+                addMessage('bot', data.answer);
+                document.getElementById('chatTokens').textContent = `本次消耗Tokens：${data.tokens}`;
+            } catch (err) {
+                addMessage('bot', `回答时出现错误：${err.message}`);
+            }
+        }
+
+        function closeChat() {
+            document.getElementById('chatModal').style.display = 'none';
+            currentSession = null;
+            document.getElementById('chatBody').innerHTML = '';
+        }
+
+        async function processFile(fileId, isRetry = false) {
+            const btn = document.querySelector(`button[data-id="${fileId}"]`);
+            try {
+                const originalText = btn.textContent;
+                btn.disabled = true;
+                btn.textContent = isRetry ? '重新解析中...' : '解析中...';
+                
+                const res = await fetch(`/api/process/${fileId}`, { method: 'POST' });
+                const data = await res.json();
+                
+                if (!data.success) throw new Error(data.error);
+                await loadFileList();
+                
+                const panel = document.getElementById('resultPanel');
+                if(isRetry) {
+                    panel.innerHTML = '<p style="color: var(--success-color)">重新解析成功！</p>';
+                    setTimeout(() => {
+                        panel.classList.add('hidden');
+                        showResults(fileId);
+                    }, 1000);
+                }
+            } catch (err) {
+                alert(`${isRetry ? '重新' : ''}解析失败: ${err.message}`);
+                await loadFileList();
+            } finally {
+                if(btn) {
+                    btn.disabled = false;
+                    btn.textContent = isRetry ? '重新解析' : '开始解析';
+                }
+            }
+        }
+
+        async function deleteFile(fileId) {
+            if (!confirm('确定删除？')) return;
+            try {
+                const res = await fetch(`/api/delete/${fileId}`, { method: 'DELETE' });
+                const data = await res.json();
+                if (!data.success) throw new Error(data.error);
+                await loadFileList();
+            } catch (err) {
+                alert(`删除失败: ${err.message}`);
+            }
+        }
+
+        async function showResults(fileId) {
+            const panel = document.getElementById('resultPanel');
+            panel.classList.remove('hidden');
+            panel.innerHTML = `
+                <div class="result-header">
+                    <span>解析结果</span>
+                    <button class="close-btn" onclick="hideResults()">×</button>
+                </div>
+                <div class="result-content">
+                    <p>正在加载结果...</p>
+                </div>
+            `;
+            
+            try {
+                const filesRes = await fetch('/api/files');
+                const { files } = await filesRes.json();
+                const fileInfo = files.find(f => f.file_id === fileId);
+                
+                if (!fileInfo?.result_files?.md) {
+                    throw new Error("未找到结果文件记录");
+                }
+
+                // 获取Markdown内容
+                const mdRes = await fetch(`/results/${fileInfo.result_files.md}`);
+                if (!mdRes.ok) throw new Error('Markdown加载失败');
+                let mdContent = await mdRes.text();
+
+                 // 新路径前缀
+                const basePath = `/results/${fileInfo.result_files.md.split('/')[0]}/auto/`;
+
+                // 逐行处理替换
+                mdContent = mdContent.split('\n').map(line => {
+                    
+                    if (line.startsWith('![') && line.includes('](images/')) {
+                        const altEnd = line.indexOf('](');
+                        const pathStart = altEnd + 2;
+                        const pathEnd = line.indexOf(')', pathStart);
+                        
+                        const altText = line.substring(2, altEnd);
+                        const imagePath = line.substring(pathStart, pathEnd);
+                        
+                        const newPath = `${basePath}${imagePath}`;
+                        return `![${altText}](${newPath})`;
+                    }
+                    return line;
+                }).join('\n');
+                console.log(mdContent);
+
+                // 显示带格式的内容
+                document.querySelector('.result-content').innerHTML = `
+                    <div class="result-actions">
+                        <a href="/results/${fileInfo.result_files.md}" download>下载Markdown</a>
+                    </div>
+                    <div class="markdown-content">${marked.parse(mdContent)}</div>
+                `;
+            } catch (err) {
+                document.querySelector('.result-content').innerHTML = 
+                    `<p style="color:red">加载失败: ${err.message}</p>`;
+                console.error('详细错误:', err);
+            }
+        }
+
+        function hideResults() {
+            const panel = document.getElementById('resultPanel');
+            panel.classList.add('hidden');
+            panel.innerHTML = '';
+        }
+
+        function initDragDrop() {
+            const dropZone = document.getElementById('dropZone');
+            const fileInput = document.getElementById('fileInput');
+
+            fileInput.addEventListener('change', async e => {
+                const file = e.target.files[0];
+                await handleFileUpload(file);
+            });
+
+            ['dragover', 'dragleave'].forEach(evt => 
+                dropZone.addEventListener(evt, e => {
+                    e.preventDefault();
+                    dropZone.style.backgroundColor = evt === 'dragover' ? '#f8f9fa' : '';
+                })
+            );
+
+            dropZone.addEventListener('drop', async e => {
+                e.preventDefault();
+                const file = e.dataTransfer.files[0];
+                await handleFileUpload(file);
+            });
+        }
+
+        function toggleLoading(show) {
+            const loader = document.getElementById('uploadLoading');
+            loader.style.display = show ? 'flex' : 'none';
+        }
+
+        async function handleFileUpload(file) {
+            if (!file) return;
+            
+            if (!file.name.toLowerCase().endsWith('.pdf')) {
+                return showError('仅支持PDF文件上传');
+            }
+
+            const formData = new FormData();
+            formData.append('pdfFile', file);
+
+            try {
+                toggleLoading(true);
+                const res = await fetch('/api/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await res.json();
+                if (!data.success) throw new Error(data.error);
+                
+                document.getElementById('fileList').innerHTML = '';
+                await loadFileList();
+                showToast('文件上传成功', 'success');
+            } catch (err) {
+                console.error('上传失败:', err);
+                showError('上传失败: ' + err.message);
+            } finally {
+                toggleLoading(false);
+            }
+        }
+
+        initDragDrop();
+        loadFileList();
+    </script>
+</body>
+</html>
